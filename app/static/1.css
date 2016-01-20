@@ -4,6 +4,11 @@ padding: 0px;
 width:100%;
 height:100%;
 font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
 a{outline:none;}/*掉链接周围的虚线框*/
 .header {
@@ -25,17 +30,8 @@ z-index: 10;
     height: 170px;
     transition: height 0.2s ease 0s;
 }
-.header .num{
-width: 100%;
-background: none repeat scroll 0% 0% #FFF;
-}
-.header .num .menu-wrapper {
-    position: relative;
-    width: 980px;
-    margin: 0px auto;
-    padding: 6px 0px;
-    z-index: 100;
-}
+
+
 .z_top{/*顶部导航条容器*/
 position: relative;
 z-index: 10000;
@@ -107,35 +103,111 @@ div.z_top-center ul li a:active
     float: right;
     font-size: 12px;
 }
-.header .num .nav-menu{
-     list-style:none; /* 去掉ul前面的符号 */
-    margin: 0px; /* 与外界元素的距离为0 */
-    padding: 0px; /* 与内部元素的距离为0 */
-    width: auto; /* 宽度根据元素内容调整 */
+
+.header .menu{
+width: 100%;
+background: none repeat scroll 0% 0% #FFF;
 }
-.header .num .nav-menu .nav-menu-item{
-    float:left; /* 向左漂移，将竖排变为横排 */
+.header .menu .menu-wrapper {
+    position: relative;
+    width: 980px;
+    margin: 0px auto;
+    padding: 6px 0px;
+    z-index: 100;
 }
-.header .num .nav-menu .item-list{
+/*nav导航盒子*/
+nav{
+    zoom: 1;
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
+
+    /*导航位置*/
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    background: #fff;
+}
+/*nav-main*/
+.nav-main{
+    width: 100%;
+    height: 100%;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+/*导航条设置*/
+.nav-main>li{
+    width: 56px;
+    display: block;
+    float: left;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    height: 50px;
+}
+.nav-main>li:hover{
+    color: #00a1d6;
+}
+.nav-main em{
+    position: relative;
+    vertical-align: middle;
+    top:23px;
+    font-style: normal;
+    font-weight: normal;
+}
+/*隐藏盒子设置*/
+.hidden-box{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    list-style:none;
+    min-width: 120px;
+    max-width: 170px;
     position: absolute;
     display: none;
-    z-index: 100;
-    left: 0px;
-    overflow: hidden;
-    top: 49px;
-    background: none repeat scroll 0% 0% #FFF;
-    border-top: 0px none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
-    border-radius: 0px 0px 4px 4px;
-    height: auto;
+    top: 50px;
+    line-height: 30px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
-.header .num .nav-menu .item-list li {
+.hidden-box li{
+    background: #FFF;
+    color: #000;
+
+}
+.hidden-box li:hover{
+    background: rgb(229,233,239);
+}
+
+/*导航栏粉色数字框*/
+.num{
     position: relative;
-    font-size: 12px;
-    line-height: 20px;
-    min-width: 120px;
-    height: auto;
-    overflow: hidden;
-    text-align: left;
-    transition: all 0.2s ease 0s;
+    top: 0px;
+    left: 0;
+    height: 14px;
+    width: 100%;
+    text-align: center;
+}
+.num span{
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    margin-left: -12px;
+    color: #fff;
+    border-radius: 4px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
+    background-color: #ffafc9;
+    font-size: 11px;
+    min-width: 18px;
+    padding: 1px 3px;
 }

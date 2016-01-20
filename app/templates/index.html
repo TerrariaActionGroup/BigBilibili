@@ -1,16 +1,77 @@
-{% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
+﻿<html>
+<head>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<link rel="stylesheet" href=static/1.css type="text/css" media="screen,projection" />
+</head>
+<body>
 
-{% block title %}Flasky{% endblock %}
-
-{% block page_content %}
-<div class="page-header">
-    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
-    {% if not known %}
-    <p>Pleased to meet you!</p>
-    {% else %}
-    <p>Happy to see you again!</p>
-    {% endif %}
+<div class="z_top">
+<div class='z_top-layer'>
+	<div class="z_top-mask"></div>
+	<div class="z_top-center">
+		<div class="z_top_nav">
+		<ul>
+			<li class=""><a class="" href=""><span>主站</span></a></li>
+			<li class=""><a class="" href=""><span>主站</span></a></li>
+			<li class=""><a class="" href=""><span>主站</span></a></li>
+			<li class=""><a class="" href=""><span>主站</span></a></li>
+		</ul>
+		</div>
+		<div class="user_box">user_box</div>
+	</div>
 </div>
-{{ wtf.quick_form(form) }}
-{% endblock %}
+</div>    
+
+<div class='header' style='background-image: url("static/2.jpg");' >
+<div class='header-layer' >
+	<div class="h-center"></div>
+	<div class="menu">
+		<div class="menu-wrapper">
+			<!--nav-->
+    	<nav>
+        <!--导航条-->
+        <ul class="nav-main">
+            <li><em class='nav-main'>首页</em>
+            </li>
+            
+            <li><em class='nav-main'>动画</em>
+            <div class="num"><span>111</span></div>
+                <ul class="hidden-box">
+                    <li>动画</li>
+                    <li>动画</li>
+                    <li>动画</li>
+                </ul>
+            </li>
+
+            <li><em class='nav-main'>电影</em>
+            <div class="num"><span>111</span></div>
+                <ul class="hidden-box">
+                    <li>电影</li>
+                    <li>电影</li>
+                    <li>电影</li>
+                </ul></li>
+            <li><em class='nav-main'>鬼畜</em>
+            <div class="num"><span>111</span></div>
+                <ul class="hidden-box">
+                    <li>鬼畜</li>
+                    <li>鬼畜</li>
+                    <li>鬼畜</li>
+                </ul>
+            </li>
+            <li><em class='nav-main'>游戏</em>
+            <div class="num"><span>111</span></div>
+                <ul class="hidden-box">
+                    <li>游戏</li>
+                    <li>游戏</li>
+                    <li>游戏</li>
+                </ul>
+            </li>
+        </ul>
+    	</nav>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+<script src="static/js/main.js"></script>
+</html>
