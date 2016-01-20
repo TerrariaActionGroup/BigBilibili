@@ -1,0 +1,109 @@
+html,body { 
+margin:0px;
+padding: 0px; 
+width:100%;
+height:100%;
+font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
+}
+a{outline:none;}/*掉链接周围的虚线框*/
+.header {
+background: none no-repeat scroll center -10px transparent;
+position: relative;
+margin: -42px auto 0px;
+}
+.header .header-layer{
+position: relative;
+top: 0px;
+left: 0px;
+width: 100%;
+z-index: 10;
+}
+.header .h-center {
+    width: 980px;
+    margin: 0px auto;
+    position: relative;
+    height: 170px;
+    transition: height 0.2s ease 0s;
+}
+.header .num{
+width: 100%;
+background: none repeat scroll 0% 0% #FFF;
+}
+.header .num .menu-wrapper {
+    position: relative;
+    width: 980px;
+    margin: 0px auto;
+    padding: 6px 0px;
+    z-index: 100;
+}
+.z_top{/*顶部导航条容器*/
+position: relative;
+z-index: 10000;
+}
+
+.z_top .z_top-layer{
+position: relative;
+top: 0px;
+left: 0px;
+width: 100%;
+}
+.z_top .z_top-mask{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 42px;
+background-color: rgba(255, 255, 255, 0.4);
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.z_top .z_top-center{
+    width: 980px;
+    margin: 0px auto;
+    position: relative;
+    height: 42px;
+}
+.z_top .z_top_nav {
+    float: left;
+    height: 42px;
+    font-size: 12px;
+}
+div.z_top-center ul
+{
+    list-style:none; /* 去掉ul前面的符号 */
+    margin: 0px; /* 与外界元素的距离为0 */
+    padding: 0px; /* 与内部元素的距离为0 */
+    width: auto; /* 宽度根据元素内容调整 */
+}
+
+/* 所有class为z_top-center的div中的ul中的li样式 */
+div.z_top-center ul li
+{
+    float:left; /* 向左漂移，将竖排变为横排 */
+    line-height: 42px;
+}
+/* 所有class为z_top-center的div中的ul中的a样式(包括尚未点击的和点击过的样式) */
+div.z_top-center ul li a, div.z_top-center ul li a:visited
+{
+    background-color: transparent; /* 背景色 */
+    color: #000; /* 文字颜色 */
+    display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */
+    padding: 0px 20px; /* 内部填充的距离 */
+    text-decoration: none; /* 不显示超链接下划线 */
+    white-space: nowrap; /* 对于文本内的空白处，不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。 */
+}
+/* 所有class为z_top-center的div中的ul中的a样式(鼠标移动到元素中的样式) */
+div.z_top-center ul li a:hover
+{
+    background-color: rgba(255, 255, 255, 0.3); /* 背景色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+/* 所有class为z_top-center的div中的ul中的a样式(鼠标点击元素时的样式) */
+div.z_top-center ul li a:active
+{
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+.user_box {
+    float: right;
+    font-size: 12px;
+}
