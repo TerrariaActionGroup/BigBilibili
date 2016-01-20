@@ -25,4 +25,4 @@ def index():
 							known=session.get('known', False))
 @main.route('/test',methods=['GET','POST'])
 def test():
-    return render_template('webpage.html')
+    return render_template('B.html')
