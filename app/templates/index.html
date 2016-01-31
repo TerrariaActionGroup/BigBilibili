@@ -1,77 +1,19 @@
-﻿<html>
-<head>
-<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-<link rel="stylesheet" href=static/1.css type="text/css" media="screen,projection" />
-</head>
-<body>
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
-<div class="z_top">
-<div class='z_top-layer'>
-	<div class="z_top-mask"></div>
-	<div class="z_top-center">
-		<div class="z_top_nav">
-		<ul>
-			<li class=""><a class="" href=""><span>主站</span></a></li>
-			<li class=""><a class="" href=""><span>主站</span></a></li>
-			<li class=""><a class="" href=""><span>主站</span></a></li>
-			<li class=""><a class="" href=""><span>主站</span></a></li>
-		</ul>
-		</div>
-		<div class="user_box">user_box</div>
-	</div>
-</div>
-</div>    
+{% block title %}Flasky{% endblock %}
 
-<div class='header' style='background-image: url("static/2.jpg");' >
-<div class='header-layer' >
-	<div class="h-center"></div>
-	<div class="menu">
-		<div class="menu-wrapper">
-			<!--nav-->
-    	<nav>
-        <!--导航条-->
-        <ul class="nav-main">
-            <li><em class='nav-main'>首页</em>
-            </li>
-            
-            <li><em class='nav-main'>动画</em>
-            <div class="num"><span>111</span></div>
-                <ul class="hidden-box">
-                    <li>动画</li>
-                    <li>动画</li>
-                    <li>动画</li>
-                </ul>
-            </li>
+{% block page_content %}
 
-            <li><em class='nav-main'>电影</em>
-            <div class="num"><span>111</span></div>
-                <ul class="hidden-box">
-                    <li>电影</li>
-                    <li>电影</li>
-                    <li>电影</li>
-                </ul></li>
-            <li><em class='nav-main'>鬼畜</em>
-            <div class="num"><span>111</span></div>
-                <ul class="hidden-box">
-                    <li>鬼畜</li>
-                    <li>鬼畜</li>
-                    <li>鬼畜</li>
-                </ul>
-            </li>
-            <li><em class='nav-main'>游戏</em>
-            <div class="num"><span>111</span></div>
-                <ul class="hidden-box">
-                    <li>游戏</li>
-                    <li>游戏</li>
-                    <li>游戏</li>
-                </ul>
-            </li>
-        </ul>
-    	</nav>
-		</div>
-	</div>
+
+<div class="page-header">
+    <h1>Hello, {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Stranger{% endif %}!</h1>
 </div>
+<div>
+    {% if current_user.can(Permission.WRITE_ARTICLES) %}
+    {{ wtf.quick_form(form) }}
+    {% endif %}
 </div>
-</body>
-<script src="static/js/main.js"></script>
-</html>
+{% include '_posts.html' %}
+
+{% endblock %}
