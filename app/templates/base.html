@@ -13,7 +13,10 @@
 {% block navbar %}
 <div class="z_top_container">
 <div class="z_top">
-    <div class="z_top-mask"></div>
+    <div class="z_top-mask-wrp">
+        <div class="z_top-mask-bg" style="background-image: url('{{ url_for('static',filename='1.jpg') }}');"></div>
+        <div class="z_top-mask"></div>
+    </div>
     <div class="z_header">
         <!--顶部导航左-->
         <div class="z_top_nav">
@@ -49,7 +52,7 @@
     </div>
 </div>
 </div>
-<div class='header' style='background-image: url("{{ url_for('static',filename='3.jpg') }}");' >
+<div class='header' style='background-image: url("{{ url_for('static',filename='1.jpg') }}");' >
 <div class='header-layer' >
     <div class="h-center"></div>
     <div class="menu">
@@ -58,24 +61,24 @@
         <nav>
         <!--导航条-->
         <ul class="nav-main">
-            <li><a href="/"><em class='nav-main'>首页</em></a>
+            <li><a href="/"><em class="home">首页</em></a>
             </li>
             
-            <li><a href="#"><em class='nav-main'>归档</em></a>
-            <div class="num"><span>111</span></div>
+            <li><a href="#"><em>2222</em>
+            <div class="num"><span>111</span></div></a>
                 <ul class="hidden-box">
-                    <a href="/"><li>动画</li></a>
-                    <li>动画</li>
-                    <li>动画</li>
+                <a href="/"><li>动画</li></a>
+                <li>动画</li>
+                <li>动画</li>
                 </ul>
             </li>
 
-            <li><a href="#"><em class='nav-main'>关于</em></a>
-            <div class="num"><span>111</span></div>
+            <li><a href="#"><em>3333</em>
+            <div class="num"><span>111</span></div></a>
                 <ul class="hidden-box">
-                    <li>电影</li>
-                    <li>电影</li>
-                    <li>电影</li>
+                <li>电影</li>
+                <li>电影</li>
+                <li>电影</li>
                 </ul>
             </li>
         </ul>

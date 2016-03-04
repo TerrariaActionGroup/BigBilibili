@@ -1,16 +1,19 @@
+/*页面整体设置*/
 html,body { 
-margin:0px;
-padding: 0px; 
-width:100%;
-height:100%;
-font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
+    margin:0px;
+    padding: 0px; 
+    width:100%;
+    height:100%;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
-*{margin:0;padding:0;}
+*{
+    margin:0;padding:0;
+}
 ul{
     display: block;
     list-style-type: disc;
@@ -20,24 +23,25 @@ ul{
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
-li{list-style-type:none;}  
-a{outline:none;}/*掉链接周围的虚线框*/
-a:link,a:visited,a:hover,a:active {
-    /*text-decoration: none;*/
-    /*color: #000000;*/
+li{
+    list-style-type:none;
+} 
+a{/*去掉链接周围的虚线框*/ 
+    outline:none;
 }
+
 /*顶部*/
 .header {
-background: none no-repeat scroll center -10px transparent;
-position: relative;
-margin: -42px auto 0px;
+    background: none no-repeat scroll center -10px transparent;
+    position: relative;
+    margin: -42px auto 0px;
 }
 .header .header-layer{
-position: relative;
-top: 0px;
-left: 0px;
-width: 100%;
-z-index: 10;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
 }
 .header .h-center {
     width: 980px;
@@ -52,7 +56,42 @@ z-index: 10;
     color: #222;
     position: relative;
     z-index: 10000;
+}    
+.z_top-mask-wrp{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
 }
+.z_top-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=40) \9;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+}
+.z_top-mask-bg {
+    position: absolute;
+    width: 100%!important;
+    height: 62px;
+    top: -10px;
+    left: 0px;
+    -webkit-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5,MakeShadow=false);
+    z-index: 50;
+    background-position: center 0!important;
+    background-repeat: no-repeat;
+}
+
 .z_top{
     height: 42px;
     background: #fff;
@@ -64,7 +103,6 @@ z-index: 10;
     z-index: 10000;
     font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
     color: #222;
-
     background-color: transparent;
 }
 .z_top .z_header {
@@ -176,12 +214,6 @@ z-index: 10;
     position: relative;
 }
 
-/*顶部导航用户头像*/
-
-
-/*用户面板隐藏盒子*/
-
-
 .header .menu{
 width: 100%;
 background: none repeat scroll 0% 0% #FFF;
@@ -219,7 +251,6 @@ nav{
 }
 /*导航条设置*/
 .nav-main>li{
-    width: 56px;
     display: block;
     float: left;
     background: #fff;
@@ -229,20 +260,53 @@ nav{
     font-size: 14px;
     height: 50px;
 }
+.nav-main>li .home {
+    margin-left: 0;
+}
 
 .nav-main>li a:hover{
     color: #00a1d6;
 }
-.nav-main>li a:link,a:visited,a:active {
+.nav-main li a:link,.nav-main li a:visited,.nav-main li a:active {
     text-decoration: none;
     color: #000000;
 }
 .nav-main em{
     position: relative;
     vertical-align: middle;
-    top:23px;
     font-style: normal;
     font-weight: normal;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 14px;
+    padding-top: 8px;
+}
+
+/*导航栏粉色数字框*/
+.num{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    height: 14px;
+    width: 100%;
+    text-align: center;
+}
+.num span{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -12px;
+    color: #fff;
+    border-radius: 4px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
+    background-color: #ffafc9;
+    font-size: 11px;
+    min-width: 18px;
+    padding: 1px 3px;
 }
 
 /*导航栏隐藏盒子*/
@@ -272,50 +336,74 @@ nav{
     background: rgb(229,233,239);
 }
 
-/*导航栏粉色数字框*/
-.num{
-    position: relative;
-    top: -11px;
-    left: 0;
-    height: 14px;
-    width: 100%;
-    text-align: center;
+/*正文部分分栏*/
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.num span{
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    margin-left: -12px;
-    color: #fff;
-    border-radius: 4px;
-    height: 12px;
-    line-height: 12px;
-    text-align: center;
-    font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
-    background-color: #ffafc9;
-    font-size: 11px;
-    min-width: 18px;
-    padding: 1px 3px;
+.left{
+    float: left;
+    padding-right: 10px;
+    width:740px;
+}
+.right{
+    float: right;
+}
+aside{
+    width: 240px;
+    position: relative;
+    margin-top: 16px;
+    background: rgb(229,233,239);
+}
+.right-weibo{
+    box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
 }
 
-/*页面主体部分*/
-.page_content{
-position: relative;
--webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
+.profile-thumbnail {
+    position: absolute;
 }
-.page_content .page_content-layer{
-position: relative;
-top: 0px;
-left: 0px;
-width: 100%;
+.profile-header {
+    min-height: 260px;
+    margin-left: 280px;
 }
-.page_content .page_content-center {
-    width: 980px;
-    margin: 0px auto;
-    position: relative;
-    transition: height 0.2s ease 0s;
+div.post-tabs {
+    margin-top: 16px;
+}
+ul.posts {
+    list-style-type: none;
+    padding: 0px;
+    margin: 16px 0px 0px 0px;
+    /*border-top: 1px solid #e0e0e0;*/
+}
+div.post-tabs ul.posts {
+    margin: 0px;
+    border-top: none;
+}
+ul.posts li.post {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+    /*border-bottom: 1px solid #e0e0e0;*/
+    background: #fff;
+}
+ul.posts li.post:hover {
+    /*background-color: #f0f0f0;*/
+}
+div.post-date {
+    float: right;
+}
+div.post-url {
+    font-weight: bold;
+}
+div.post-thumbnail {
+    position: absolute;
+}
+div.post-content {
+    margin-left: 0px;
+    min-height: 48px;
+}
+div.post-footer {
+    text-align: right;
 }

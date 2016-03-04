@@ -10,16 +10,16 @@ html, body {
 	-webkit-tap-highlight-color: transparent;
 }
 
-div{
+/*div{
 	display: block;
-}
+}*/
 
 .b-page-body{
 	zoom:1;
 }
 
 .main-inner{
-	width: 980px;
+	/*width: 980px;*/
 	margin: 0;
 	position: relative;
 	zoom:1;
@@ -31,12 +31,14 @@ div{
 	padding-bottom: 10px;
 	padding-left: 0px;
 	zoom: 1;
+	position: relative;
+	display:inline-block; 
 }
 
 .viewbox .info{
 	padding: 5px 0 8px 0;
 	float: left;
-	width: 640px;
+	width: 635px;
 	position: relative;
 	overflow: hidden;
 }
@@ -186,4 +188,5 @@ float: left;
 	border-bottom: 1px solid #e5e9ef;
 	background-color: #f6f9fa;
 	padding: 20px 0;
+	position: relative;
 }
