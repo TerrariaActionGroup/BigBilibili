@@ -68,3 +68,9 @@ def edit_profile_admin(id):
 	form.location.data = user.location
 	form.about_me.data = user.about_me
 	return render_template('edit_profile.html', form=form, user=user)
+
+@main.route('/video/<avnumber>', methods=['GET', 'POST'])
+def video(avnumber):
+	fileName = 'video/' + avnumber + '.mp4'
+	filesrc = url_for('static', filename = fileName)
+	return render_template('video.html',av=filesrc)

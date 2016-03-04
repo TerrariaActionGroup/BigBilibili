@@ -1,0 +1,189 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	background: #fff;
+	color: #222;
+	min-width: 990px;
+	tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+
+div{
+	display: block;
+}
+
+.b-page-body{
+	zoom:1;
+}
+
+.main-inner{
+	width: 980px;
+	margin: 0;
+	position: relative;
+	zoom:1;
+}
+
+.viewbox{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	zoom: 1;
+}
+
+.viewbox .info{
+	padding: 5px 0 8px 0;
+	float: left;
+	width: 640px;
+	position: relative;
+	overflow: hidden;
+}
+
+.v-title{
+	color: RGB(82,86,89);
+}
+
+.viewbox .info .tminfo {
+	float: left;
+	width: 100%;
+	margin-bottom: 12px;
+	height: 16px;
+	line-height: 16px;
+	color: #666;
+	font-size: 12px;
+	margin-top: 6px;
+	zoom: 1;
+}
+
+.viewbox .info .tminfo a{
+	color: RGB(150,150,150);
+}
+
+.viewbox .info .v-title-info {
+	height: 28px;
+	line-height: 28px;
+	zoom: 1;
+}
+
+.viewbox .info .v-title-info .v-title-line {
+	display: inline-block;
+	width: 98px;
+	vertical-align: middle;
+	float: left;
+	white-space: nowrap;
+}
+
+.viewbox .info .v-title-info .v-title-line span{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.viewbox .upinfo {
+	width: 315px;
+	margin-top: 20px;
+	float: right;
+	background: #fff;
+	padding-left: 90px;
+	position: relative;
+}
+
+.viewbox .upinfo .u-face {
+width: 68px;
+text-align: center;
+float: left;
+margin: 0 10px 0 0;
+top: 0;
+left: 0;
+position: absolute;
+z-index: 0;
+}
+
+.viewbox .upinfo .u-face img{
+	 border-radius:50%;
+}
+
+.viewbox .upinfo .r-info {
+float: left;
+width: 100%;
+}
+
+.viewbox .upinfo .r-info .usname a.name {
+	max-width: 120px;
+	color: #00a1d6;
+	font-size: 14px;
+}
+
+.viewbox .upinfo .r-info .sign {
+	max-width: 215px;
+	color: #333;
+	line-height: 20px;
+	min-height: 11px;
+	overflow: hidden;
+	word-wrap: break-word;
+	position: relative;
+}
+
+.viewbox .upinfo .r-info .up-video-message {
+line-height: 18px;
+margin-bottom: 10px;
+margin-top: 3px;
+}
+
+.viewbox .upinfo .r-info .up-video-message .huizi{
+	color: RGB(150,150,150);
+}
+
+.b-btn, button {
+color: #fff;
+cursor: pointer;
+text-align: center;
+border-radius: 4px;
+background-color: #00a1d6;
+vertical-align: middle;
+border: 1px solid #00a1d6;
+transition: .1s;
+transition-property: background-color,border,color;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.viewbox .upinfo .r-info .b-btn.f {
+height: 24px;
+font-size: 14px;
+line-height: 24px;
+color: #fff;
+display: inline-block;
+transition: .2s background-color;
+width: 142px;
+border: 0;
+float: left;
+}
+
+.viewbox .upinfo .r-info .sixin{
+	border:1px solid #ccc;
+	text-align: center;
+	border-radius: 4px;
+	vertical-align: middle;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	width: 82px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 15px;
+}
+
+.player-wrapper {
+	border-top: 1px solid #e5e9ef;
+	border-bottom: 1px solid #e5e9ef;
+	background-color: #f6f9fa;
+	padding: 20px 0;
+}
