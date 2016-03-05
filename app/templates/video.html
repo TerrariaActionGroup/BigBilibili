@@ -87,6 +87,89 @@
   			<span class="glyphicon" aria-hidden="true">&#xe096</span>
   			<span class="glyphicon" aria-hidden="true">&#xe097</span>
 			</div>	
+			<div class="arc-toolbar">
+				<div class="block-share">
+					<img style="float:left;margin-right:20px;" src="{{ url_for('static', filename='img/video/icon-share.png') }}">
+					<div class="share-right">
+						<div style="font-size:15pt;">分享</div>
+						<div>901</div>
+					</div>
+				</div>
+				<div style="margin-left:75px;" class="block-share">
+					<img style="float:left;margin-right:20px;" src="{{ url_for('static', filename='img/video/icon-store.png') }}">
+					<div class="share-right">
+						<div style="font-size:15pt;">收藏</div>
+						<div>7076</div>
+					</div>
+				</div>
+				<div style="margin-left:75px;" class="block-share">
+					<img style="float:left;margin-right:20px;" src="{{ url_for('static', filename='img/video/icon-phone.png') }}">
+					<div class="share-right">
+						<div style="font-size:15pt;">用手机看</div>
+						<div>离线看更方便</div>
+					</div>
+				</div>
+				<div style="margin-left:210px;" class="block-share">
+					<img style="float:left;margin-right:20px;" src="{{ url_for('static', filename='img/video/icon-bigcoin.png') }}">
+					<div class="share-right">
+						<div style="font-size:15pt;">硬币</div>
+						<div>2788</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-inner">
+			<div><img src="{{ url_for('static', filename='img/video/pic-aoka.png') }}"></div>
+			<div class="v-large">
+				
+			</div>
+			<div class="v-small">
+				<div class="charge-entrance">
+					<div class="charge-support">
+						<span style="font-size:14px;margin-left:25px;margin-top:14px;">约谈人生</span>
+						<a href="" target="_blank" class="charge-support-btn">支持TA</a>
+					</div>
+					<div class="charge-num">
+						<img src="{{ url_for('static', filename='img/video/pic-chongdian.png') }}">
+					</div>
+					<div class="charge-rank">
+						<ul class="charge-rank-list">
+							<li class="charge-rank-item">
+								<span class="charge-rank-num">1</span>
+								<img class="small-face" src="{{ url_for('static', filename='img/face/tou1.png') }}">
+								<span class="charge-rank-name">圣徒愤怒</span>
+							</li>
+							<li class="charge-rank-item">
+								<span class="charge-rank-num">2</span>
+								<img class="small-face" src="{{ url_for('static', filename='img/face/tou1.png') }}">
+								<span class="charge-rank-name">圣徒愤怒</span>
+							</li>
+							<li class="charge-rank-item">
+								<span class="charge-rank-num">3</span>
+								<img class="small-face" src="{{ url_for('static', filename='img/face/tou1.png') }}">
+								<span class="charge-rank-name">圣徒愤怒</span>
+							</li>
+						</ul>
+						<hr width="98%" size="4" color="#fefefe" height="4px"></hr>
+						<span class="chargea">
+							<a href="" target="_blank">如何支持自己喜欢的作者?</a>
+						</span>
+					</div>
+				</div>
+				<div class="v-live-recommend">
+					<div class="b-head">
+						<span class="b-head-t" style="font-size:16px;">大家围观的直播</span>
+					</div>
+					<ul class="v-list-live">
+						<li>
+							<div>
+								<img src="{{ url_for('static', filename='img/video/pic-recommand.png') }}">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -108,7 +191,7 @@
 <script>
   $("#danmup").DanmuPlayer({
     src: "{{ av }}",
-    height: "588px", 
+    height: "580px", 
     width: "980px" 
     ,urlToGetDanmu:"query.php"
     ,urlToPostDanmu:"stone.php"
