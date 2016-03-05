@@ -122,7 +122,100 @@
 		<div class="main-inner">
 			<div><img src="{{ url_for('static', filename='img/video/pic-aoka.png') }}"></div>
 			<div class="v-large">
-				
+				<div class="v_info">
+					<div class="s_tag"></div>
+					<div class="v_desc">
+						自制 妮可酱来了兴致再撸一发，能一块儿唱的赶紧向她求婚吧(￣3￣)
+						</br>
+						PS：音乐是天德池里丢东西，上一发妮可酱在这里
+					</div>
+				</div>
+				<hr width="97%" size="6" color="#fefefe" height="4px"></hr>	
+				<div class="recommend-area">
+					<span class="haixihuan">看过该视频的还喜欢</span>
+					<div class="rm-list-wrp">
+						<img src="{{ url_for('static', filename='img/video/pic-recommend.png') }}">
+					</div>
+				</div>
+				<div class="common">
+					<div class="common-head">
+						<span class="common-head-num">837</span>
+						<span class="common-head-num">评论</span>
+						<input type="checkbox" checked="checked">
+						<label style="font-weight:normal;">开启迷你播放器</label>
+					</div>
+					<div class="comm">
+						<div class="c_order">
+							<img src="{{ url_for('static', filename='img/video/pic-commorder.png') }}">
+						</div>
+						<div class="comm_send">
+							<div class="user_face" style="float:left;">
+								<img src="{{ url_for('static', filename='img/face/userface.png') }}">
+							</div>
+							<div class="textarea-container" style="float:left; margin-left:20px;">
+								<div class="text-back">
+									<div style="float:left;width:10px;height:69px;"></div>
+									<textarea class="textarea-style">请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。
+									</textarea>
+								</div>
+								<div class="yanwenzi">
+									(・ω・) 颜文字
+								</div>
+							</div>
+							<div class="common-btn">发表</br>评论</div>
+						</div>
+						</br></br></br>
+						<ul class="comm_list">
+						{% for comment in comments %}
+							<li class="main-floor">
+								<hr class="comm-hr"></hr>
+								<div class="facebox" style="float:left; margin-right:25px;">
+									<img src="{{ url_for('static', filename='img/face/commface.png') }}">
+								</div>
+								<div class="comm-content">
+									<div class="comm-name">
+										<span><B>毒药水</B></span>
+										<img src="{{ url_for('static', filename='img/video/pic-level.png') }}">
+									</div>
+									<div class="content">
+										自动变色有点厉害啊_(:3」∠)_
+									</div>
+									<div class="elinfo" style="margin-left:75px; margin-top:8px;">
+										<span>#705</span>
+										<span>4分钟前</span>
+										<a href="">赞(0)</a>
+										<a href="">回复</a>
+									</div>
+									<div class="reply"></div>
+								</div>
+							</li>
+						{% endfor %}
+						</ul>
+						{% if comments %}
+							<hr class="comm-hr"></hr>
+						{% endif %}
+						<div class="pagelistbox">
+							<img src="{{ url_for('static', filename='img/video/pic-picklist.png') }}">
+						</div>
+						<div class="comm_send">
+							<div class="user_face" style="float:left;">
+								<img src="{{ url_for('static', filename='img/face/userface.png') }}">
+							</div>
+							<div class="textarea-container" style="float:left; margin-left:20px;">
+								<div class="text-back">
+									<div style="float:left;width:10px;height:69px;"></div>
+									<textarea class="textarea-style">请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。
+									</textarea>
+								</div>
+								<div class="yanwenzi">
+									(・ω・) 颜文字
+								</div>
+							</div>
+							<div class="common-btn">发表</br>评论</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 			<div class="v-small">
 				<div class="charge-entrance">

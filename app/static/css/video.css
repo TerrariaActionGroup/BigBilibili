@@ -220,13 +220,13 @@ float: left;
 .v-large{
 	float: left;
 	width: 690px;
-	padding-bottom: 300px;
+	padding-bottom: 50px;
 }
 
 .v-small{
 	float: right;
 	width: 290px;
-	padding-bottom: 300px;
+	padding-bottom: 50px;
 }
 
 .charge-entrance .charge-support {
@@ -309,4 +309,119 @@ float: left;
 
 .b-head{
 	padding: 20px 0 15px 0;
+}
+
+.v_desc{
+	padding: 40px 0 30px 0;
+	color: RGB(150,150,150);
+}
+
+.haixihuan{
+	font-size: 17px;
+	padding: 30px 0 30px 0;
+}
+
+.rm-list-wrp{
+	padding: 15px 15px 15px 0;
+}
+
+.common-head-num{
+	font-size: 17px;
+	margin-right: 22px;
+}
+
+.c_order{
+	margin-top: 10px;
+}
+
+.comm_send{
+	padding: 20px 20px 20px 10px;
+	vertical-align: middle;
+}
+
+.user_face img{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.text-back{
+	background-image: url(../img/video/pic-send-back.png);
+	width: 487px;
+	height:69px;
+}
+
+.textarea-style{
+	background-image: url(../img/video/pic-send-back-right.png);
+	float: left;
+	border-top: 0px solid;
+	border-right: 0px solid;
+	border-bottom: 0px solid;
+	border-left: 0px solid;
+	width: 477px;
+	height:69px;
+	resize:none;
+	padding: 5px 10px 5px 10px;
+	color: RGB(150,150,150); 
+}
+
+.yanwenzi{
+	width: 94px;
+	margin-left: 10px;
+	margin-top: 5px;
+	border:1px solid #D6D6D6;
+	border-radius: 2px;
+	padding: 4px;
+	color: RGB(150,150,150); 
+}
+
+.common-btn{
+	border:1px solid #fff;
+	border-radius: 5px;
+	float: left;
+	font-size: 14px;
+	height: 65;
+	color: #fff;
+	padding: 12px 20px 12px 20px;
+	background-color: #00a1d6;
+	margin-left: 15px;
+}
+
+.comm_list{
+	padding: 20px 0 20px 0;
+}
+
+.main-floor{
+	padding: 0px 10px 0px 10px;
+}
+
+.facebox img{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.comm-content{
+	padding: 10px 25px 25px 0;
+}
+
+.content{
+	font-size: 15px;
+	margin: 3px 0 3px 0;
+}
+
+.elinfo span {
+	color: RGB(150,150,150);
+	margin-right: 25px;
+}
+
+.elinfo a{
+	color: RGB(150,150,150);
+	margin-right: 25px;
+}
+
+.comm-hr{
+	margin-left: 75px;
+	size:4;
+	width: 85%;
 }

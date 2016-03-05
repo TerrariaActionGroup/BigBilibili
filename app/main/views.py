@@ -73,4 +73,6 @@ def edit_profile_admin(id):
 def video(avnumber):
 	fileName = 'video/' + avnumber + '.mp4'
 	filesrc = url_for('static', filename = fileName)
-	return render_template('video.html',av=filesrc)
+	comments = ['1','2','3','4']
+
+	return render_template('video.html',av=filesrc, comments=comments)
