@@ -19,7 +19,7 @@ html, body {
 }
 
 .main-inner{
-	/*width: 980px;*/
+	width:980px;
 	margin: 0;
 	position: relative;
 	zoom:1;
