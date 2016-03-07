@@ -336,30 +336,21 @@ nav{
     background: rgb(229,233,239);
 }
 
-/*正文部分分栏*/
-.container {
+/*正文部分*/
+.content {
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
-.left{
-    float: left;
-    padding-right: 10px;
-    width:740px;
+.content-center{/*正文部分中央*/
+    text-align: left;
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
 }
-.right{
-    float: right;
-}
-aside{
-    width: 240px;
-    position: relative;
-    margin-top: 16px;
-    background: rgb(229,233,239);
-}
-.right-weibo{
-    box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
-}
+
 
 .profile-thumbnail {
     position: absolute;
