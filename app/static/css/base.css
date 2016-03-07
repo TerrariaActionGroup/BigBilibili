@@ -28,6 +28,7 @@ li{
 } 
 a{/*去掉链接周围的虚线框*/ 
     outline:none;
+    text-decoration: none;
 }
 
 /*顶部*/

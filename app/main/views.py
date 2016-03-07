@@ -76,3 +76,10 @@ def video(avnumber):
 	comments = ['1','2','3','4']
 
 	return render_template('video.html',av=filesrc, comments=comments)
+
+@main.route('/dance/', methods=['GET', 'POST'])
+def dance():
+	lists = ['1','2','3','4','5','2','3','4','5','2','3','4']
+	rank1 = ['1', '2', '3']
+	rank2 = ['4','5', '6' ,'7', '8', '9', '10']
+	return render_template('dance.html',vlist=lists, rank1=rank1, rank2=rank2)
