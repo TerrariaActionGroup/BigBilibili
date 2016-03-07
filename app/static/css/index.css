@@ -84,11 +84,25 @@ html, body {
 	margin-bottom: 50px;
 }
 
+.b-head-l{
+	float: left;
+	vertical-align: middle;
+}
+
 .dance-type{
-	font-size: 20px;
+	font-size: 22px;
 	float: left;
 }
 
 .b-slt-tab{
 	float: left;
+	vertical-align: middle;
+	margin-top: 10px;
 }
+
+.b-slt-tab li{
+	float: left;
+	margin-left: 27px;
+}
+
+
