@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    background: #fff;
+    color: #222;
+    min-width: 990px;
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.b-page-body {
+    zoom: 1;
+}
+
+.main-inner {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+}
+
+.fcname {
+    margin: 0 auto;
+    padding-top: 4px;
+}
+
+#daohang li{
+	float: left;
+	margin-right: 45px;
+	font-size: 13px;
+}
+
+#daohang li a{
+	color: RGB(150,150,150);
+}
+
+#daohang li a:hover{
+	color:#00a1d6;
+	text-decoration: none;
+}
+
+.container-top{
+	width: 980px;
+	height: 220px;
+	margin-top: 40px;
+}
+
+.b-topic{
+	float: left;
+	height: 220px;
+	width: 620px;
+}
+
+.top-list{
+	float: left;
+	height: 220px;
+	width: 360px;
+}
+
+.top-list li{
+	width: 160px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;
+}
+
+.container-row{
+	width: 980px;
+	zoom:1;
+	margin: 0 auto;
+	margin-top: 42px;
+}
+
+.b-l{
+	width: 700px;
+	float: left;
+}
+
+.b-r{
+	width: 260px;
+	float: right;
+	margin-bottom: 50px;
+}
+
+.dance-type{
+	font-size: 20px;
+	float: left;
+}
+
+.b-slt-tab{
+	float: left;
+}
