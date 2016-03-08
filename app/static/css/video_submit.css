@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #222;
+    min-width: 990px;
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main-container {
+	width: 1370px;
+	height: 900px;
+    background: url(../img/video_submit/bg.jpg) center 0 no-repeat;
+}
+
+.main-inner-m{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.upload-container {
+    border: 1px solid #afe6ff;
+    background: #fff;
+    position: relative;
+    min-height: 795px;
+    padding-top: 18px;
+
+}
+
+.upload-container a{
+	background-color: RGB(237,237,237);
+	padding: 5px 10px 5px 10px;
+	margin-left: 20px;
+	text-decoration: none;
+	color: #00A1D6;
+}
+
+.upload-container a:hover{
+	color: RGB(231,120,157);
+}
