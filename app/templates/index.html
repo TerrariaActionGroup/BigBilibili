@@ -6,126 +6,42 @@
 
 {% block head %}
 {{ super() }}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dance.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
 
 {% block page_content %}
-
 <div class="b-page-body">
-	<div class="main-inner">
-		<div id="daohang" class="fcname">
-			<ul>
-				<li><a href="" style="color: #00a1d6;">全部</a></li>
-				<li><a href="">宅舞</a></li>
-				<li><a href="">三次元舞蹈</a></li>
-				<li><a href="">舞蹈教程</a></li>
-			</ul>
-		</div>
-		<div class="container-top">
-			<div  class="b-topic">
-				<img src="{{ url_for('static', filename='img/dance/pic-topic.png') }}">
-			</div>
-			<ul class="top-list">
-				<div style="display:inline-block;">
-					<li>
-						<img src="{{ url_for('static', filename='img/dance/pic-vitem.png') }}">
-					</li>
-					<li>
-						<img src="{{ url_for('static', filename='img/dance/pic-vitem.png') }}">
-					</li>
+	<div class="index-container">
+		<div class="container-top-wrapper">
+			<div class="container-top clearfix">
+				<div  class="b-l">
+					<img src="http://i1.hdslb.com/u_user/5b7f4fce0d2a31cdd1c92a100384616c.jpg">
 				</div>
-				<div style="margin-top:16px;">
-					<li>
-						<img src="{{ url_for('static', filename='img/dance/pic-vitem.png') }}">
-					</li>
-					<li>
-						<img src="{{ url_for('static', filename='img/dance/pic-vitem.png') }}">
-					</li>
-				</div>
-			</ul>
-		</div>
-
-		<div class="container-row">
-			<div class="b-l">
-				<div class="b-head">
-					<div class="b-head-l">
-						<span class="dance-type">宅舞</span>
-						<ul class="b-slt-tab">
-							<li><a href="" style="color:#00a1d6;">最新动态</a></li>
-							<li><a href="" style="color:#000;">最新投稿</a></li>
+				<div class="b-r">
+					<div class="top-list-wrapper">
+						<ul class="top-list clearfix">
+							<li>
+								<div class="v-item">
+									<a href="/video/av4027572/" target="_blank" title="【AMV/治愈/这个是僵尸吗】我永远陪你，我可是僵尸啊！">
+										<div class="preview">
+											<img data-img="" src="http://i0.hdslb.com/group1/M00/85/2B/oYYBAFbcIVGAfQdpAADX8zhw9yE890.jpg_320x200.jpg" loaded="loaded" alt="【AMV/治愈/这个是僵尸吗】我永远陪你，我可是僵尸啊！" style="opacity: 1;">
+										</div>
+										<div class="mask"></div>
+										<div class="info">
+											<div class="t">【AMV/治愈/这个是僵尸吗】我永远陪你，我可是僵尸啊！</div>
+											<p class="up">up主：一夜造个国</p>
+											<p class="play">播放：23170</p>
+										</div>
+									</a>
+								</div>
+							</li>
 						</ul>
 					</div>
-					<div class="b-link-more">更多 ></div>
-					<div class="read-push">
-						<img src="{{ url_for('static', filename='img/dance/pic-shuaxin.png') }}">
-						<span><B>112</B>条新动态</span>
-					</div>
-				</div>
-				<div class="b-body">
-					<ul class="v-list">
-
-						{% for item in vlist %}
-						<li>
-							<div class="v-list-juti">
-								<img src="{{ url_for('static', filename='img/dance/pic-zhaiwu.png') }}">
-							</div>
-							<span style="margin-bottom:5px;">【全职高手】 送过乐乐的荣耀</span>
-							<div class="list-juti-info">
-								<span>
-									<img src="{{ url_for('static', filename='img/dance/icon-bofang.png') }}">
-									2816
-								</span>
-								<span style="margin-left:52px;">
-									<img src="{{ url_for('static', filename='img/dance/icon-comment.png') }}">
-									99
-								</span>
-							</div>
-						</li>
-						{% endfor %}
-
-					</ul>
-				</div>
-			</div>
-			<div class="b-r">
-				<div class="b-rhead" style="width:260px;margin-top:8px;">
-					<div style="float:left;">
-						<span class="rementext">热门</span>
-					</div>
-					<ul>
-						<li>全部</li>
-						<li style="color:#00a1d6;">原创</li>
-					</ul>
-					<div class="sanri">三日 ∨</div>
-				</div>
-				<div class="b-rbody">
-					<ul class="rlist">
-						{% for ranks in rank1 %}
-							<li>
-								<span class="rank-num">{{ ranks }}</span>
-								<div class="rankman">
-									<img src="{{ url_for('static', filename='img/dance/pic-rankman.png') }}">
-								</div>
-								<div class="rank-info">
-									<span>【黒kuromi x足太ぺんた】</span>	
-									</br>
-									<span class="pingfen">综合评分：18.5万</span>	
-								</div>
-							</li>
-						{% endfor %}
-
-						{% for rankss in rank2 %}
-							<li>
-								<span class="rank-num" style="background-color: #DADADA;">{{ rankss }}</span>
-								<span>【尾狐】12 fan club 拖了很久嘻嘻，跳的</span>
-							</li>
-						{% endfor %}
-					</ul>
-					<div class="lookmore">查看更多 ></div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
+
 
 {% endblock %}

@@ -11,6 +11,19 @@ html,body {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    background: #fff;
+    color: #222;
+    min-width: 990px;
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+div{display: block;}
 *{
     margin:0;padding:0;
 }
@@ -25,12 +38,20 @@ ul{
 }
 li{
     list-style-type:none;
-} 
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 a{/*去掉链接周围的虚线框*/ 
     outline:none;
     text-decoration: none;
 }
-
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
 /*顶部*/
 .header {
     background: none no-repeat scroll center -10px transparent;
@@ -332,6 +353,7 @@ nav{
     background: #FFF;
     color: #000;
     text-align: center;
+    -webkit-transition: width .3s linear;
 }
 .hidden-box li:hover{
     background: rgb(229,233,239);

@@ -98,11 +98,9 @@
         {{ message }}
     </div>
     {% endfor %}
-    <div class="content-center">
         {% block page_content %}
 
         {% endblock %}
-    </div>
 </div>
 {% endblock %}
 
@@ -110,5 +108,4 @@
 {{ super() }}
 <script src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
 <script src="{{ url_for('static',filename='js/main.js') }}"></script>
-{{ moment.include_moment() }}
 {% endblock %}
