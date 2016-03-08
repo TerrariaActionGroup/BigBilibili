@@ -83,3 +83,7 @@ def dance():
 	rank1 = ['1', '2', '3']
 	rank2 = ['4','5', '6' ,'7', '8', '9', '10']
 	return render_template('dance.html',vlist=lists, rank1=rank1, rank2=rank2)
+
+@main.route('/video_submit/', methods=['GET', 'POST'])
+def video_submit():
+	return render_template('video_submit.html')
