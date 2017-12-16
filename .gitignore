@@ -11,7 +11,9 @@ data-dev.sqlite
 .sqlite
 .Python
 env/
+/env
 venv/
+/venv
 build/
 develop-eggs/
 dist/
