@@ -1,4 +1,4 @@
-/*页面整体设置*/
+/*页面整体设置2*/
 html,body { 
     margin:0px;
     padding: 0px; 
@@ -22,6 +22,10 @@ html, body {
     min-width: 990px;
     tap-highlight-color: transparent;
     -webkit-tap-highlight-color: transparent;
+}
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
 }
 div{display: block;}
 *{
@@ -207,18 +211,20 @@ visibility: hidden;
 }
 
 .i_menu{
+	opacity:0;
     display: none;
     position:absolute;
     background-color: #fff;
-    top:42px;
+    top:47px;
     left: 50%;
     width: 260px;
-    height:300px;
+    
     margin-left: -130px;
     padding-bottom: 0;
-    padding-top: 53px;
+    padding-top: 35px;
     border-top: 0;
     box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
+	border-radius:0px 0px 5px 5px;
 }
 
 /*顶栏左部*/
@@ -261,8 +267,8 @@ nav{
     position: relative;
     background: #fff;
 }
-/*nav-main*/
-.nav-main{
+/*nav-menu*/
+.nav-menu{
     width: 100%;
     height: 100%;
     -webkit-margin-before: 0em;
@@ -271,40 +277,52 @@ nav{
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
+.nav-menu .home {
+    margin-right: 9px;
+}
+.nav-menu .nav-item {
+    float: left;
+    display: block;
+    position: relative;
+    margin-right: 0;
+}
+.nav-menu .nav-link {
+    width: 48px;
+    text-align: center;
+    display: block;
+}
 /*导航条设置*/
-.nav-main>li{
+.nav-menu>li{
     display: block;
     float: left;
     background: #fff;
     color: #000;
     cursor: pointer;
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
     height: 50px;
 }
-.nav-main>li .home {
+.nav-menu>li .home {
     margin-left: 0;
 }
 
-.nav-main>li a:hover{
+.nav-menu>li a:hover{
     color: #00a1d6;
 }
-.nav-main li a:link,.nav-main li a:visited,.nav-main li a:active {
+.nav-menu li a:link,.nav-menu li a:visited,.nav-menu li a:active {
     text-decoration: none;
     color: #000000;
 }
-.nav-main em{
-    position: relative;
-    vertical-align: middle;
-    font-style: normal;
-    font-weight: normal;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 14px;
-    padding-top: 8px;
-}
 
+.nav-menu .nav-link .nav-name {
+    display: inline-block;
+    vertical-align: middle;
+    color: #222;
+    font-size: 12px;
+    height: 40px;
+    padding-top: 8px;
+    line-height: 50px;
+}
 /*导航栏粉色数字框*/
 .num{
     position: absolute;
@@ -314,24 +332,36 @@ nav{
     width: 100%;
     text-align: center;
 }
-.num span{
+.nav-menu .nav-link .num-wrap {
     position: absolute;
-    top: 0px;
-    left: 50%;
-    margin-left: -12px;
-    color: #fff;
-    border-radius: 4px;
-    height: 12px;
-    line-height: 12px;
+    top: 8px;
+    left: 0;
+    height: 14px;
+    width: 100%;
     text-align: center;
-    font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
+}
+.nav-menu .nav-link .num {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    -webkit-transform: scale(.85);
+    -ms-transform: scale(.85);
+    transform: scale(.85);
+    color: #fff;
     background-color: #ffafc9;
-    font-size: 11px;
-    min-width: 18px;
+    border-radius: 3px;
+    height: 12px;
+    line-height: 14px;
+    max-width: 28px;
     padding: 1px 3px;
+    font-family: sans-serif;
 }
 
+
+
 /*导航栏隐藏盒子*/
+.nav-menu li:hover .hidden-box{display:block;}/*鼠标划过时显示*/
+
 .hidden-box{
     background-color: #fff;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -347,6 +377,9 @@ nav{
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
+	box-shadow: 0 20px 4px rgba(0,0,0,.16);
+	border-radius:0px 0px 50px 50px;
+	z-index: 2;
 }
 .hidden-box li{
     width: 100%;
@@ -354,6 +387,7 @@ nav{
     color: #000;
     text-align: center;
     -webkit-transition: width .3s linear;
+	
 }
 .hidden-box li:hover{
     background: rgb(229,233,239);
